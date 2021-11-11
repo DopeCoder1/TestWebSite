@@ -1,0 +1,1103 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+ul, ol, li {
+  padding: 0;
+  margin: 0;
+}
+
+.loader {
+  background-image: url(../img/win59clouds.jpg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: fixed;
+}
+.loader .loader_wrapper {
+  color: #000;
+  font-family: "Work Sans", sans-serif;
+}
+.loader .loader_wrapper .load_pseudo_icon {
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 40px;
+  letter-spacing: -2px;
+  text-align: right;
+  margin-right: 10px;
+}
+.loader .loader_wrapper .load_pseudo_icon:after {
+  content: "\00a9";
+  font-size: 10px;
+  position: fixed;
+  top: 24px;
+  bottom: 0;
+  left: 0;
+  right: 10px;
+}
+.loader .loader_wrapper .load_text_content {
+  margin: 70px 0;
+  text-align: center;
+}
+.loader .loader_wrapper .load_text_content .win_95_ico {
+  width: 380px;
+  height: 285px;
+  -webkit-transform: rotate(18deg);
+          transform: rotate(18deg);
+}
+.loader .loader_wrapper .load_text_content .load_text {
+  width: 470px;
+  margin: 0 auto;
+}
+.loader .loader_wrapper .load_text_content .load_text p {
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 25px;
+  text-align: left;
+}
+.loader .loader_wrapper .load_text_content .load_text h1 {
+  font-size: 80px;
+  font-weight: bolder;
+  letter-spacing: -2px;
+  line-height: 60px;
+}
+.loader .loader_wrapper .load_text_content .load_text h1 span {
+  color: #fff;
+  font-weight: lighter;
+  font-size: 80px;
+  margin-left: -20px;
+}
+.loader .loader_wrapper .load_text_content .load_text h3 {
+  font-size: 28px;
+  letter-spacing: -1px;
+  line-height: 25px;
+  text-align: right;
+  margin-right: 15px;
+  font-weight: bolder;
+}
+.loader .loader_wrapper .load_animation_content {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.loader .loader_wrapper .load_animation_content .load_bar {
+  height: 25px;
+  background-color: #b0bac3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+.loader .loader_wrapper .load_animation_content .load_bar .loading_line {
+  display: block;
+  width: 400px;
+  height: 150px;
+  -webkit-animation-name: load_anim;
+          animation-name: load_anim;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-transform: translate(-1300px);
+          transform: translate(-1300px);
+}
+.loader .loader_wrapper .load_animation_content .load_bar .loading_left {
+  background: #b0bac3;
+  background: linear-gradient(99deg, #b0bac3 7%, #a1aec4 19%, #8799c5 39%, #5a8aba 58%, #4d80b9 71%, #5082bd 100%);
+}
+.loader .loader_wrapper .load_animation_content .load_bar .loading_right {
+  background: #b0bac3;
+  background: linear-gradient(277deg, #b0bac3 7%, #a1aec4 19%, #8799c5 39%, #5a8aba 58%, #4d80b9 71%, #5082bd 100%);
+}
+@-webkit-keyframes load_anim {
+  0% {
+    -webkit-transform: translate(-1300px);
+            transform: translate(-1300px);
+  }
+  100% {
+    -webkit-transform: translate(1300px);
+            transform: translate(1300px);
+  }
+}
+@keyframes load_anim {
+  0% {
+    -webkit-transform: translate(-1300px);
+            transform: translate(-1300px);
+  }
+  100% {
+    -webkit-transform: translate(1300px);
+            transform: translate(1300px);
+  }
+}
+.off_loader {
+  visibility: hidden;
+  z-index: 0;
+  opacity: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+@media screen and (max-width: 480px) {
+  .loader .loader_wrapper .load_pseudo_icon {
+    font-size: 30px;
+    letter-spacing: -2px;
+  }
+  .loader .loader_wrapper .load_pseudo_icon:after {
+    top: 19px;
+  }
+  .loader .loader_wrapper .load_text_content {
+    margin: 70px 0;
+    text-align: center;
+  }
+  .loader .loader_wrapper .load_text_content .win_95_ico {
+    width: 340px;
+    height: 250px;
+  }
+  .loader .loader_wrapper .load_text_content .load_text {
+    width: 400px;
+  }
+  .loader .loader_wrapper .load_text_content .load_text h1 {
+    font-size: 70px;
+    line-height: 54px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .loader .loader_wrapper .load_pseudo_icon {
+    font-size: 30px;
+    letter-spacing: -2px;
+  }
+  .loader .loader_wrapper .load_pseudo_icon:after {
+    top: 19px;
+  }
+  .loader .loader_wrapper .load_text_content {
+    margin: 70px 0;
+    text-align: center;
+  }
+  .loader .loader_wrapper .load_text_content .win_95_ico {
+    width: 320px;
+    height: 220px;
+  }
+  .loader .loader_wrapper .load_text_content .load_text {
+    width: 360px;
+    margin-top: 10px;
+  }
+  .loader .loader_wrapper .load_text_content .load_text p {
+    font-size: 20px;
+  }
+  .loader .loader_wrapper .load_text_content .load_text h1 {
+    font-size: 60px;
+    line-height: 45px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .loader .loader_wrapper .load_pseudo_icon {
+    font-size: 30px;
+    letter-spacing: -2px;
+  }
+  .loader .loader_wrapper .load_pseudo_icon:after {
+    top: 19px;
+  }
+  .loader .loader_wrapper .load_text_content {
+    margin: 70px 0;
+    text-align: center;
+  }
+  .loader .loader_wrapper .load_text_content .win_95_ico {
+    width: 300px;
+    height: 200px;
+  }
+  .loader .loader_wrapper .load_text_content .load_text {
+    width: 320px;
+    margin-top: 30px;
+  }
+  .loader .loader_wrapper .load_text_content .load_text p {
+    font-size: 20px;
+  }
+  .loader .loader_wrapper .load_text_content .load_text h1 {
+    font-size: 50px;
+    line-height: 20px;
+  }
+  .loader .loader_wrapper .load_text_content .load_text h1 span {
+    margin-left: -15px;
+  }
+  .loader .loader_wrapper .load_text_content .load_text h3 {
+    margin-right: 20px;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .loader .loader_wrapper .load_pseudo_icon {
+    font-size: 30px;
+    letter-spacing: -2px;
+  }
+  .loader .loader_wrapper .load_pseudo_icon:after {
+    top: 19px;
+  }
+  .loader .loader_wrapper .load_text_content {
+    margin: 90px 0;
+    text-align: center;
+  }
+  .loader .loader_wrapper .load_text_content .win_95_ico {
+    width: 260px;
+    height: 160px;
+  }
+  .loader .loader_wrapper .load_text_content .load_text {
+    width: 280px;
+    margin-top: 20px;
+  }
+  .loader .loader_wrapper .load_text_content .load_text p {
+    font-size: 20px;
+  }
+  .loader .loader_wrapper .load_text_content .load_text h1 {
+    font-size: 45px;
+    line-height: 40px;
+  }
+  .loader .loader_wrapper .load_text_content .load_text h1 span {
+    margin-left: -10px;
+    font-size: 50px;
+  }
+  .loader .loader_wrapper .load_text_content .load_text h3 {
+    margin-right: 20px;
+    line-height: 22px;
+    font-size: 25px;
+  }
+}
+.header {
+  position: fixed;
+  bottom: 0;
+  background-color: #bdbebd;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  padding: 4px;
+}
+.header .header_wrapper .menu_panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "DotGothic16", sans-serif;
+  color: #000;
+  cursor: default;
+}
+.header .header_wrapper .menu_panel .windows {
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header .header_wrapper .menu_panel .windows .general_win {
+  background-color: #bdbebd;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #fff #000 #000 #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 4px;
+  margin-right: 10px;
+  width: 135px;
+}
+.header .header_wrapper .menu_panel .windows .general_win img {
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin-right: 8px;
+}
+.header .header_wrapper .menu_panel .windows .general_win p {
+  font-size: 18px;
+  margin-bottom: 2px;
+  letter-spacing: 1px;
+}
+.header .header_wrapper .menu_panel .windows .win_reg p {
+  font-size: 15px;
+}
+.header .header_wrapper .menu_panel .windows .win_btn {
+  width: 90px;
+}
+.header .header_wrapper .menu_panel .windows .win_btn img {
+  width: 30px;
+  height: 30px;
+}
+.header .header_wrapper .menu_panel .windows .win_btn p {
+  font-weight: bolder;
+  letter-spacing: -1px;
+}
+.header .header_wrapper .menu_panel .windows .win_btn_clicked {
+  border-color: #000 #fff #fff #000;
+}
+.header .header_wrapper .menu_panel .windows .win_about {
+  display: none;
+}
+.header .header_wrapper .menu_panel .windows .win_faq {
+  display: none;
+}
+.header .header_wrapper .menu_panel .windows .win_rules {
+  display: none;
+}
+.header .header_wrapper .menu_panel .windows .win_schedule {
+  display: none;
+}
+.header .header_wrapper .menu_panel .windows .win_reg {
+  display: none;
+}
+.header .header_wrapper .menu_panel .windows .win_awards {
+  display: none;
+}
+.header .header_wrapper .menu_panel .windows .win_about_on {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-color: #000 #fff #fff #000;
+}
+.header .header_wrapper .menu_panel .windows .win_faq_on {
+  border-color: #000 #fff #fff #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header .header_wrapper .menu_panel .windows .win_rules_on {
+  border-color: #000 #fff #fff #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header .header_wrapper .menu_panel .windows .win_schedule_on {
+  border-color: #000 #fff #fff #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header .header_wrapper .menu_panel .windows .win_reg_on {
+  border-color: #000 #fff #fff #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header .header_wrapper .menu_panel .windows .win_awards_on {
+  border-color: #000 #fff #fff #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header .header_wrapper .menu_panel .windows .win_hide {
+  border-color: #fff #000 #000 #fff;
+}
+.header .header_wrapper .menu_panel .cloak {
+  border-width: 2px;
+  border-style: solid;
+  border-color: grey white white grey;
+  width: 152px;
+  text-align: center;
+}
+.header .header_wrapper .menu_panel .cloak .time {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.menu_windows {
+  padding: 2px;
+  background-color: #bdbebd;
+  z-index: 3;
+  position: fixed;
+  bottom: 40px;
+  right: 0;
+  left: 0;
+  width: 170px;
+  height: 265px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #fff #000 #000 #fff;
+  margin-left: 3px;
+  display: none;
+  font-family: "DotGothic16", sans-serif;
+}
+.menu_windows .menu_windows_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.menu_windows .menu_windows_wrapper .name_line {
+  width: 35px;
+  height: 265px;
+  background-color: #ba0b0b;
+  background: linear-gradient(135deg, #850707 14%, #950d0d 29%, #d50b0b 90%);
+  text-align: start;
+}
+.menu_windows .menu_windows_wrapper .name_line p {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  margin-top: 165px;
+  font-size: 18px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+.menu_windows .menu_windows_wrapper .prog_list {
+  width: 100%;
+}
+.menu_windows .menu_windows_wrapper .prog_list .prog_list_sections {
+  list-style-type: none;
+}
+.menu_windows .menu_windows_wrapper .prog_list .prog_list_sections li {
+  padding: 5px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+.menu_windows .menu_windows_wrapper .prog_list .prog_list_sections li .prog_list_icons {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+.menu_windows .menu_windows_wrapper .prog_list .prog_list_sections li p {
+  color: #000;
+  font-size: 13px;
+}
+.menu_windows .menu_windows_wrapper .prog_list .prog_list_sections li:hover {
+  background-color: #ba0b0b;
+}
+.menu_windows .menu_windows_wrapper .prog_list .prog_list_sections li:hover p {
+  color: #fff;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.menu_windows_on {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .header .header_wrapper .menu_panel .windows .general_win {
+    width: 110px;
+    margin-right: 5px;
+  }
+  .header .header_wrapper .menu_panel .windows .general_win p {
+    font-size: 13px;
+  }
+  .header .header_wrapper .menu_panel .windows .win_reg p {
+    font-size: 11px;
+  }
+  .header .header_wrapper .menu_panel .windows .win_btn {
+    width: 90px;
+  }
+  .header .header_wrapper .menu_panel .windows .win_btn p {
+    font-size: 16px;
+  }
+  .header .header_wrapper .menu_panel .cloak {
+    width: 130px;
+  }
+  .header .header_wrapper .menu_panel .cloak .time {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header .header_wrapper .menu_panel .windows .general_win {
+    padding: 0 2px;
+    width: 100px;
+  }
+  .header .header_wrapper .menu_panel .windows .general_win img {
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+  }
+  .header .header_wrapper .menu_panel .windows .general_win p {
+    font-size: 11px;
+    font-weight: bolder;
+  }
+  .header .header_wrapper .menu_panel .windows .win_reg p {
+    font-size: 10px;
+  }
+  .header .header_wrapper .menu_panel .windows .win_btn {
+    width: 80px;
+  }
+  .header .header_wrapper .menu_panel .windows .win_btn img {
+    width: 25px;
+    height: 25px;
+  }
+  .header .header_wrapper .menu_panel .windows .win_btn p {
+    font-size: 14px;
+    font-weight: bolder;
+    letter-spacing: -1px;
+  }
+  .header .header_wrapper .menu_panel .cloak {
+    width: 110px;
+  }
+  .header .header_wrapper .menu_panel .cloak .time {
+    font-size: 16px;
+  }
+
+  .menu_windows {
+    bottom: 35px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header .header_wrapper .menu_panel .windows .general_win {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .header .header_wrapper .menu_panel .windows .win_btn {
+    width: 70px;
+  }
+  .header .header_wrapper .menu_panel .cloak {
+    width: 100px;
+  }
+  .header .header_wrapper .menu_panel .cloak .time {
+    margin-top: 5px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 420px) and (min-width: 320px) {
+  .header .header_wrapper .menu_panel .windows .general_win {
+    width: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 8px;
+  }
+  .header .header_wrapper .menu_panel .windows .general_win p {
+    display: none;
+  }
+  .header .header_wrapper .menu_panel .windows .win_btn {
+    width: 70px;
+  }
+  .header .header_wrapper .menu_panel .windows .win_btn p {
+    display: block;
+  }
+  .header .header_wrapper .menu_panel .cloak {
+    width: 80px;
+  }
+  .header .header_wrapper .menu_panel .cloak .time {
+    margin-top: 2px;
+    font-size: 14px;
+  }
+}
+.shortcut_icons {
+  margin: 15px;
+  cursor: pointer;
+  width: 80px;
+  height: 70px;
+  text-align: center;
+  z-index: 2;
+  position: fixed;
+  font-family: "Work Sans", sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.shortcut_icons .shortcut_img {
+  width: 50px;
+  height: 50px;
+}
+.shortcut_icons .shortcut_names {
+  font-size: 14px;
+}
+
+.shortcut_about {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.shortcut_faq {
+  top: 100px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.shortcut_rules {
+  top: 200px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.shortcut_schedule {
+  top: 300px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.shortcut_reg {
+  top: 400px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.shortcut_awards {
+  top: 500px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.desktop_wins {
+  position: fixed;
+  top: 130px;
+  left: 350px;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  width: 500px;
+  height: 400px;
+  background-color: #bdbebd;
+  padding: 2px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #fff #000 #000 #fff;
+  display: none;
+}
+.desktop_wins .win_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #06157f;
+  padding: 2px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000 #fff #fff #000;
+  cursor: move;
+}
+.desktop_wins .win_header .win_icon_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.desktop_wins .win_header .win_icon_text .win_header_icon {
+  width: 12px;
+  height: 12px;
+  margin: 5px;
+}
+.desktop_wins .win_header .win_icon_text .win_header_way {
+  font-family: "VT323", monospace;
+  font-size: 20px;
+}
+.desktop_wins .win_header .win_control_btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+.desktop_wins .win_header .win_control_btns img {
+  margin: 0 2px;
+}
+.desktop_wins .win_content {
+  margin-top: 5px;
+  font-size: 14px;
+  overflow-y: scroll;
+  color: #56d7e4;
+  font-family: "Inconsolata", monospace;
+  padding: 10px;
+  border-width: 2px;
+  border-style: solid;
+  background-color: #000;
+  text-align: justify;
+  line-height: 20px;
+  border-color: #000 #fff #fff #000;
+  width: 466px;
+  height: 312px;
+}
+.desktop_wins .win_content .win_content_text {
+  margin: 5px 0;
+}
+.desktop_wins .win_content .win_content_list {
+  margin-left: 15px;
+  list-style-type: disc;
+}
+.desktop_wins .win_content .win_content_list li {
+  color: #3ea6af;
+}
+.desktop_wins .win_content .win_content_list li span {
+  color: #56d7e4;
+}
+.desktop_wins .win_content .text_question {
+  margin: 10px 0;
+  cursor: pointer;
+}
+.desktop_wins .win_content .text_answer {
+  display: none;
+}
+.desktop_wins .win_content .text_answer_on {
+  display: block;
+  color: #e4d656;
+  margin-left: 10px;
+}
+.desktop_wins .win_content .text_date {
+  cursor: pointer;
+}
+.desktop_wins .win_content .date_table {
+  text-align: center;
+}
+.desktop_wins .win_content .date_table tr,
+.desktop_wins .win_content .date_table th,
+.desktop_wins .win_content .date_table td {
+  border: 1px #3ea6af solid;
+  padding: 5px;
+}
+.desktop_wins .win_content .show_date_table {
+  display: none;
+}
+.desktop_wins .win_content .show_date_table_on {
+  display: block;
+}
+.desktop_wins .win_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.desktop_wins .win_footer .win_footer_line {
+  width: 50px;
+  height: 15px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000 #fff #fff #000;
+}
+.desktop_wins .win_footer .long_line {
+  width: 378px;
+}
+.desktop_wins .win_footer .short_lines {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.desktop_win_registration {
+  height: 422px;
+  top: 150px;
+  left: 400px;
+}
+.desktop_win_registration .win_form_content {
+  background-color: #bdbebd;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #fff #000 #000 #fff;
+  color: #000;
+  overflow: hidden;
+  height: 350px;
+}
+.desktop_win_registration .win_form_content .win_reg_text {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.desktop_win_registration .win_form_content .win_reg_form .win_form_inform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.desktop_win_registration .win_form_content .win_reg_form .win_form_inform .win_inform_p {
+  margin-right: 5px;
+}
+.desktop_win_registration .win_form_content .win_reg_form .win_form_inform .win_reg_input {
+  display: block;
+  padding: 2px;
+  width: 250px;
+}
+.desktop_win_registration .win_form_content .win_reg_form .win_form_footer {
+  text-align: right;
+  margin-top: 20px;
+}
+.desktop_win_registration .win_form_content .win_reg_form .win_form_footer .win_form_btn {
+  background-color: #bdbebd;
+  border-width: 2px;
+  border-style: solid;
+  width: 100px;
+  height: 30px;
+  border-color: #fff #000 #000 #fff;
+  font-size: 17px;
+}
+.desktop_win_registration .win_form_content .win_reg_form .win_form_footer .win_form_btn:active {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #000 #fff #fff #000;
+}
+
+.desktop_win_faq {
+  top: 165px;
+  left: 400px;
+}
+
+.desktop_win_rules {
+  left: 450px;
+  top: 140px;
+}
+
+.desktop_win_schedule {
+  left: 500px;
+  top: 168px;
+}
+
+.desktop_win_awards {
+  left: 550px;
+  top: 140px;
+}
+
+.desktop_win_about_on {
+  display: block;
+}
+
+.desktop_win_faq_on {
+  display: block;
+}
+
+.desktop_win_rules_on {
+  display: block;
+}
+
+.desktop_win_schedule_on {
+  display: block;
+}
+
+.desktop_win_registration_on {
+  display: block;
+}
+
+.desktop_win_awards_on {
+  display: block;
+}
+
+@media screen and (max-width: 1200px) {
+  .desktop_wins {
+    top: 80px;
+    left: 150px;
+  }
+
+  .desktop_win_faq {
+    top: 100px;
+    left: 200px;
+  }
+
+  .desktop_win_rules {
+    top: 120px;
+    left: 250px;
+  }
+
+  .desktop_win_schedule {
+    top: 140px;
+    left: 300px;
+  }
+
+  .desktop_win_awards {
+    top: 160px;
+    left: 350px;
+  }
+}
+@media screen and (max-width: 786px) {
+  .desktop_wins {
+    top: 70px;
+    left: 120px;
+  }
+
+  .desktop_win_faq {
+    top: 90px;
+    left: 160px;
+  }
+
+  .desktop_win_rules {
+    top: 120px;
+    left: 140px;
+  }
+
+  .desktop_win_schedule {
+    top: 140px;
+    left: 160px;
+  }
+
+  .desktop_win_awards {
+    top: 160px;
+    left: 140px;
+  }
+}
+@media screen and (max-width: 678px) and (min-width: 480px) {
+  .desktop_wins {
+    top: 60px;
+    left: 110px;
+    width: 400px;
+    height: 400px;
+  }
+  .desktop_wins .win_content {
+    width: 368px;
+  }
+
+  .desktop_win_faq {
+    top: 80px;
+    left: 140px;
+  }
+
+  .desktop_win_rules {
+    top: 100px;
+    left: 120px;
+  }
+
+  .desktop_win_schedule {
+    top: 120px;
+    left: 140px;
+  }
+
+  .desktop_win_awards {
+    top: 140px;
+    left: 120px;
+  }
+
+  .desktop_win_registration .win_form_content {
+    height: 330px;
+  }
+  .desktop_win_registration .win_form_content .win_reg_text {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .desktop_win_registration .win_form_content .win_reg_form .win_form_inform {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 5px 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .desktop_win_registration .win_form_content .win_reg_form .win_form_inform .win_inform_p {
+    margin-right: 5px;
+    font-size: 16px;
+  }
+  .desktop_win_registration .win_form_content .win_reg_form .win_form_inform .win_reg_input {
+    display: block;
+    padding: 2px;
+    width: 180px;
+  }
+  .desktop_win_registration .win_form_content .win_reg_form .win_form_footer {
+    margin-top: 10px;
+  }
+  .desktop_win_registration .win_form_content .win_reg_form .win_form_footer .win_form_btn {
+    width: 80px;
+    height: 30px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 360px) {
+  .desktop_wins {
+    top: 60px;
+    left: 110px;
+    width: 300px;
+    height: 300px;
+  }
+  .desktop_wins .win_header .win_icon_text .win_header_way {
+    font-size: 14px;
+  }
+  .desktop_wins .win_content {
+    width: 268px;
+    height: 212px;
+  }
+
+  .desktop_win_registration {
+    width: 360px;
+    top: 60px;
+    left: 100px;
+  }
+  .desktop_win_registration .win_form_content {
+    overflow-y: scroll;
+    height: 230px;
+    width: 326px;
+  }
+  .desktop_win_registration .win_form_content .win_reg_text {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .desktop_win_registration .win_form_content .win_reg_form .win_form_inform {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 5px 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .desktop_win_registration .win_form_content .win_reg_form .win_form_inform .win_inform_p {
+    margin-right: 5px;
+    font-size: 13px;
+  }
+  .desktop_win_registration .win_form_content .win_reg_form .win_form_inform .win_reg_input {
+    display: block;
+    padding: 2px;
+    width: 120px;
+  }
+  .desktop_win_registration .win_form_content .win_reg_form .win_form_footer {
+    margin-top: 10px;
+  }
+  .desktop_win_registration .win_form_content .win_reg_form .win_form_footer .win_form_btn {
+    width: 80px;
+    height: 30px;
+    font-size: 12px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
+
+.selected {
+  background-color: #0000ac;
+  border: 1.8px #ffffff; 
+  border-style: dotted;
+}
